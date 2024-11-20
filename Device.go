@@ -93,6 +93,10 @@ func (dev *Device) GetServices() map[string]string {
 	return dev.endpoints
 }
 
+func (dev *Device) GetDeviceParams() DeviceParams {
+	return dev.params
+}
+
 // GetDeviceInfo return available endpoints
 func (dev *Device) GetDeviceInfo() DeviceInfo {
 	return dev.info
